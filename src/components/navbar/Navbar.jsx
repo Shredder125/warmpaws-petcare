@@ -1,19 +1,52 @@
-import React, { useState, useContext } from "react";
-import { Link } from "react-router-dom";
+import React, { useState, useContext, useEffect } from "react";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FaPaw } from "react-icons/fa";
 import { FiSun, FiMoon } from "react-icons/fi";
 import { ThemeContext } from "../../contexts/ThemeContext";
-
-const user = null;
+import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
+import { app } from "../../firebase/config";
+import "animate.css";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [user, setUser] = useState(null);
   const { theme, toggleTheme } = useContext(ThemeContext);
+  const navigate = useNavigate();
+  const location = useLocation();
+  const auth = getAuth(app);
+
+  useEffect(() => {
+    const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
+      setUser(currentUser);
+    });
+    return () => unsubscribe();
+  }, [auth]);
+
+  const handleLogout = async () => {
+    try {
+      await signOut(auth);
+      navigate("/login");
+    } catch (err) {
+      console.error("Logout failed:", err);
+    }
+  };
+
+  const getLinkClasses = (path) => {
+    const isActive = location.pathname === path;
+    return `transition-colors ${
+      theme === "light"
+        ? isActive
+          ? "text-red-500 font-bold"
+          : "text-blue-900 hover:text-red-400"
+        : isActive
+        ? "text-yellow-400 font-bold"
+        : "text-yellow-300 hover:text-red-400"
+    }`;
+  };
 
   return (
     <nav
-      className={`sticky top-0 z-50 transition-colors duration-500
-      ${
+      className={`sticky top-0 z-50 transition-colors duration-500 animate__animated animate__pulse ${
         theme === "light"
           ? "bg-gradient-to-r from-blue-100 to-blue-200"
           : "bg-gradient-to-r from-gray-900 to-gray-800"
@@ -29,28 +62,22 @@ const Navbar = () => {
           />
           WarmPaws
         </Link>
+
         <div className="hidden md:flex items-center gap-6 font-medium">
-          <Link
-            to="/"
-            className={`hover:text-red-400 transition-colors ${
-              theme === "light" ? "text-blue-900" : "text-yellow-300"
-            }`}
-          >
+          <Link to="/" className={getLinkClasses("/")}>
             Home
           </Link>
+
           <Link
-            to="/services"
-            className={`hover:text-red-400 transition-colors ${
-              theme === "light" ? "text-blue-900" : "text-yellow-300"
-            }`}
+            to={user ? "/services" : "/login"}
+            className={getLinkClasses("/services")}
           >
             Services
           </Link>
+
           <Link
-            to="/profile"
-            className={`hover:text-red-400 transition-colors ${
-              theme === "light" ? "text-blue-900" : "text-yellow-300"
-            }`}
+            to={user ? "/profile" : "/login"}
+            className={getLinkClasses("/profile")}
           >
             My Profile
           </Link>
@@ -63,7 +90,15 @@ const Navbar = () => {
           >
             {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
           </button>
-          {!user && (
+
+          {user ? (
+            <button
+              onClick={handleLogout}
+              className="btn btn-sm btn-primary bg-red-500 hover:bg-red-600 text-white"
+            >
+              Logout
+            </button>
+          ) : (
             <Link
               to="/login"
               className="btn btn-sm btn-primary bg-blue-500 hover:bg-blue-600 text-white"
@@ -71,7 +106,6 @@ const Navbar = () => {
               Login
             </Link>
           )}
-
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -86,11 +120,9 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {isMenuOpen && (
         <div
-          className={`md:hidden transition-colors duration-500
-          ${
+          className={`md:hidden transition-colors duration-500 ${
             theme === "light"
               ? "bg-blue-100 border-t border-blue-200"
               : "bg-gray-900 border-t border-gray-700"
@@ -98,55 +130,44 @@ const Navbar = () => {
         >
           <ul className="flex flex-col px-4 py-2 gap-2">
             <li>
-              <Link
-                to="/"
-                className={`block py-2 ${
-                  theme === "light"
-                    ? "text-blue-900 hover:text-red-400"
-                    : "text-yellow-300 hover:text-red-400"
-                }`}
-              >
+              <Link to="/" className={getLinkClasses("/")}>
                 Home
               </Link>
             </li>
             <li>
               <Link
-                to="/services"
-                className={`block py-2 ${
-                  theme === "light"
-                    ? "text-blue-900 hover:text-red-400"
-                    : "text-yellow-300 hover:text-red-400"
-                }`}
+                to={user ? "/services" : "/login"}
+                className={getLinkClasses("/services")}
               >
                 Services
               </Link>
             </li>
             <li>
               <Link
-                to="/profile"
-                className={`block py-2 ${
-                  theme === "light"
-                    ? "text-blue-900 hover:text-red-400"
-                    : "text-yellow-300 hover:text-red-400"
-                }`}
+                to={user ? "/profile" : "/login"}
+                className={getLinkClasses("/profile")}
               >
                 My Profile
               </Link>
             </li>
-            {!user && (
-              <li>
-                <Link
-                  to="/login"
-                  className={`block py-2 ${
+            <li>
+              {user ? (
+                <button
+                  onClick={handleLogout}
+                  className={`w-full text-left py-2 ${
                     theme === "light"
-                      ? "text-blue-900 hover:text-red-400"
-                      : "text-yellow-300 hover:text-red-400"
+                      ? "text-red-500 hover:text-red-700"
+                      : "text-red-400 hover:text-red-600"
                   }`}
                 >
+                  Logout
+                </button>
+              ) : (
+                <Link to="/login" className={getLinkClasses("/login")}>
                   Login
                 </Link>
-              </li>
-            )}
+              )}
+            </li>
           </ul>
         </div>
       )}

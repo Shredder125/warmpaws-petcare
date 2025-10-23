@@ -1,14 +1,15 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import vets from "../../data/Vet.json";
+import "animate.css";
 
 const VetMarquee = () => {
   const [isPaused, setIsPaused] = useState(false);
   const duplicatedVets = [...vets, ...vets];
 
   return (
-    <div className="bg-lenear-to-b from-blue-50 to-blue-100 py-6 overflow-hidden">
-      <h2 className="text-5xl font-bold text-center mb-6">
+    <div className="bg-lenear-to-b from-blue-50 to-blue-100 py-6 overflow-hidden animate__animated animate__zoomIn">
+      <h2 className="text-5xl font-bold text-center mb-6 ">
         Meet Our Expert Vets
       </h2>
 
