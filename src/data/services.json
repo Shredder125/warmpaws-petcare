@@ -1,0 +1,122 @@
+[
+  {
+    "serviceId": 1,
+    "serviceName": "Winter Coat Fitting for Dogs",
+    "providerName": "PawCare Studio",
+    "providerEmail": "info@pawcare.com",
+    "price": 25,
+    "rating": 4.9,
+    "slotsAvailable": 4,
+    "description": "Custom coat fitting and warm outfit options to keep your dog comfortable in the cold. Our experienced stylists ensure a perfect fit, using high-quality, soft materials that are gentle on your pet's skin. Ideal for both small and large breeds, this service guarantees your furry friend stays cozy while looking stylish throughout the winter season.",
+    "image": "https://i.ibb.co/m5FRgVK9/Waterproof-winter-coat-for-whippets-sighthounds-and-other-dogs.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 2,
+    "serviceName": "Thermal Blanket Grooming Package",
+    "providerName": "WarmTails Spa",
+    "providerEmail": "contact@warmtails.com",
+    "price": 30,
+    "rating": 4.8,
+    "slotsAvailable": 3,
+    "description": "A grooming session combined with cozy thermal wrapping to protect your pet’s coat from dry winter air. Our thermal blankets are specially designed to maintain optimal warmth while your pet enjoys gentle brushing, nail trimming, and a calming spa experience. Perfect for pets sensitive to cold or those with delicate fur that requires extra care.",
+    "image": "https://i.ibb.co/wZfQFXQ1/Baby-Fleece-Handtuch-Cream.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 3,
+    "serviceName": "Paw Balm & Hydration Treatment",
+    "providerName": "CozyPaws Clinic",
+    "providerEmail": "hello@cozypaws.com",
+    "price": 15,
+    "rating": 4.7,
+    "slotsAvailable": 5,
+    "description": "Protective paw balm and hydration therapy to prevent cracking and dryness during chilly walks. This treatment uses natural, pet-safe ingredients to soothe, moisturize, and shield paws from ice, salt, and rough surfaces. Ideal for active pets who enjoy outdoor play during winter months, leaving their paws soft and healthy.",
+    "image": "https://i.ibb.co/0RJdVhyg/B-lsamo-para-patas-en-barra-40g-crema-para-pies-de-mascotas-suministros-protectores-para-patas-de.jpg",
+    "category": "Skincare"
+  },
+  {
+    "serviceId": 4,
+    "serviceName": "Winter Health Checkup for Pets",
+    "providerName": "PetWell Hospital",
+    "providerEmail": "support@petwell.com",
+    "price": 40,
+    "rating": 5.0,
+    "slotsAvailable": 6,
+    "description": "Comprehensive winter wellness examination, including temperature, skin, and immunity checks. Our veterinary experts thoroughly assess your pet’s health to ensure they are not affected by seasonal illnesses. Preventive care recommendations, vaccinations, and personalized guidance are provided to maintain your pet’s vitality and comfort throughout the cold season.",
+    "image": "https://i.ibb.co/pjLs6xh3/98ad6d56-fd67-4125-bd1d-b78a5ddc9df3.jpg",
+    "category": "Health"
+  },
+  {
+    "serviceId": 5,
+    "serviceName": "Cozy Bedding Setup Service",
+    "providerName": "SnuggleNest Pets",
+    "providerEmail": "care@snugglenest.com",
+    "price": 20,
+    "rating": 4.6,
+    "slotsAvailable": 2,
+    "description": "We help you set up the perfect warm bedding arrangement using hypoallergenic fabrics and heating pads. Each bedding setup is customized to your pet’s size and sleeping habits, ensuring maximum comfort. Soft plush materials, secure placement, and warmth-retention techniques guarantee a cozy environment for restful sleep during cold nights.",
+    "image": "https://i.ibb.co/JF78krYR/Temu-Extra-Small-Dog-Bed-Thickened-Plush-Pet-Bed-With-Non-slip-Bottom-Soft-Washable-Polyester-Dog-Be.jpg",
+    "category": "Home Care"
+  },
+  {
+    "serviceId": 6,
+    "serviceName": "Pet Nutrition Winter Consultation",
+    "providerName": "VetDiet Experts",
+    "providerEmail": "info@vetdiet.com",
+    "price": 35,
+    "rating": 4.8,
+    "slotsAvailable": 5,
+    "description": "Personalized nutrition advice to maintain your pet’s energy and immunity during cold weather. Our experts analyze your pet’s dietary needs, activity level, and seasonal adjustments to recommend optimal meal plans, supplements, and feeding routines. This consultation ensures pets stay healthy, energetic, and immune-strong throughout the winter months.",
+    "image": "https://i.ibb.co/m5m3gJRt/Pet-nutrition.jpg",
+    "category": "Consultation"
+  },
+  {
+    "serviceId": 7,
+    "serviceName": "Winter Walk & Play Session",
+    "providerName": "SnowyTails Adventures",
+    "providerEmail": "hello@snowytails.com",
+    "price": 18,
+    "rating": 4.5,
+    "slotsAvailable": 7,
+    "description": "Fun outdoor play and safe winter walks led by trained handlers to keep your pet active and happy. Each session is tailored to your pet’s energy and comfort level, including snow play, obstacle activities, and socialization. Protective gear and safe practices are ensured to make cold-weather adventures enjoyable and stress-free.",
+    "image": "https://i.ibb.co/KxzfJNFg/download-1.jpg",
+    "category": "Outdoor Activity"
+  },
+  {
+    "serviceId": 8,
+    "serviceName": "Pet Spa & Warm Bath Session",
+    "providerName": "Fluff & Buff",
+    "providerEmail": "contact@fluffbuff.com",
+    "price": 28,
+    "rating": 4.9,
+    "slotsAvailable": 3,
+    "description": "Gentle warm bath, coat drying, and spa treatment to keep your pet relaxed and clean during winter. Includes hypoallergenic shampoos, conditioning treatments, and soothing massage to maintain coat health. Perfect for pets sensitive to cold water or those needing extra comfort and relaxation in winter months.",
+    "image": "https://i.ibb.co/1fRZSSQq/Paawsh-Where-Every-Pet-Feels-Special.jpg",
+    "category": "Grooming"
+  },
+  {
+    "serviceId": 9,
+    "serviceName": "Custom Pet Sweater Knitting",
+    "providerName": "KnitPaws Studio",
+    "providerEmail": "craft@knitpaws.com",
+    "price": 22,
+    "rating": 4.7,
+    "slotsAvailable": 4,
+    "description": "Handcrafted sweaters tailored to your pet’s size and personality using soft, pet-safe wool. Each sweater is designed to provide warmth, flexibility, and style, keeping pets cozy during walks or indoor activities. Custom colors, patterns, and personalized embroidery are available for a unique winter wardrobe.",
+    "image": "https://i.ibb.co/DDVVNjhK/download-3.jpg",
+    "category": "Clothing"
+  },
+  {
+    "serviceId": 10,
+    "serviceName": "Heated Kennel Installation",
+    "providerName": "PawPal Engineering",
+    "providerEmail": "service@pawpal.com",
+    "price": 50,
+    "rating": 4.9,
+    "slotsAvailable": 2,
+    "description": "Installation of temperature-controlled kennels to ensure your pet’s comfort throughout the winter. Our engineers design and set up fully insulated kennels with adjustable heating, safety sensors, and durable materials. Ideal for outdoor pets or those needing extra warmth, providing a safe and cozy environment in harsh cold conditions.",
+    "image": "https://i.ibb.co/SgdBgYg/Amazon-com.jpg",
+    "category": "Home Care"
+  }
+]

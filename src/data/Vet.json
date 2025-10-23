@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Emily Parker",
+    "image": "https://i.ibb.co/jvyRH1Cd/Veterinarian-1.jpg",
+    "consultationFees": 50,
+    "experience": "8 years",
+    "rating": 4.9,
+    "career": "DVM, Veterinary Surgery Specialist"
+  },
+  {
+    "id": 2,
+    "name": "Dr. Rajesh Mehta",
+    "image": "https://i.ibb.co/7xR7FXH7/Veterinarian-and-Dog.jpg",
+    "consultationFees": 45,
+    "experience": "6 years",
+    "rating": 4.8,
+    "career": "DVM, Animal Nutrition Expert"
+  },
+  {
+    "id": 3,
+    "name": "Dr. Sophia Lee",
+    "image": "https://i.ibb.co/W4cw75Tm/Veterinarian-I-want-to-be-a-vet-who-rescues-and-cares-for-animals.jpg",
+    "consultationFees": 55,
+    "experience": "10 years",
+    "rating": 5.0,
+    "career": "DVM, Pet Dermatology Specialist"
+  },
+  {
+    "id": 4,
+    "name": "Dr. Ahmed Khan",
+    "image": "https://i.ibb.co/Jw9Z955H/Sab-as-que-los-perros-y-los-gatos-tambi-n-pueden-tener-diabetes.jpg",
+    "consultationFees": 40,
+    "experience": "5 years",
+    "rating": 4.7,
+    "career": "DVM, Emergency & Critical Care"
+  },
+  {
+    "id": 5,
+    "name": "Dr. Isabella Cruz",
+    "image": "https://i.ibb.co/hRw136kN/veterinarian.jpg",
+    "consultationFees": 60,
+    "experience": "12 years",
+    "rating": 4.9,
+    "career": "DVM, Exotic & Small Animal Specialist"
+  },
+  {
+    "id": 6,
+    "name": "Dr. Michael Chen",
+    "image": "https://i.ibb.co/ksYvdYTM/Dr-Diarra-Blue.jpg",
+    "consultationFees": 50,
+    "experience": "9 years",
+    "rating": 4.8,
+    "career": "DVM, Veterinary Cardiology Specialist"
+  },
+  {
+    "id": 7,
+    "name": "Dr. Laura Thompson",
+    "image": "https://i.ibb.co/60CpfQp1/Wagnific.jpg",
+    "consultationFees": 48,
+    "experience": "7 years",
+    "rating": 4.7,
+    "career": "DVM, Pet Behavioral Specialist"
+  },
+  {
+    "id": 8,
+    "name": "Dr. Sanjay Rao",
+    "image": "https://i.ibb.co/vCNqgQnp/Surgeon-Photos-Download-Free-High-Quality-Pictures-Freepik.jpg",
+    "consultationFees": 42,
+    "experience": "6 years",
+    "rating": 4.6,
+    "career": "DVM, Preventive Care & Vaccination"
+  },
+  {
+    "id": 9,
+    "name": "Dr. Olivia Martinez",
+    "image": "https://i.ibb.co/XZ5FbRF8/Female-vet-in-scrubs-holding-a-puppy.jpg",
+    "consultationFees": 55,
+    "experience": "11 years",
+    "rating": 4.9,
+    "career": "DVM, Pet Nutrition & Wellness Expert"
+  },
+  {
+    "id": 10,
+    "name": "Dr. Daniel Kim",
+    "image": "https://i.ibb.co/tTvj8rg7/Smiling-Vet-Doctor-With-Pet-Woman-Vet-Doctor-PNG-Transparent-Image-and-Clipart-for-Free-Download.jpg",
+    "consultationFees": 60,
+    "experience": "13 years",
+    "rating": 5.0,
+    "career": "DVM, Orthopedic Surgery Specialist"
+  }
+]
