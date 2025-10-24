@@ -1,3 +1,5 @@
+<b>NAME AND FEATURES OF THIS PROJECT</b>
+
 1. Project Name: WarmPaws (Pet care center website).
 
 2. Purpose: WarmPaws is a pet-care platform designed to help pet owners find veterinary services, manage profiles, and explore various pet-related services. The application offers a seamless and modern user experience, ensuring users can access essential pet care features efficiently.
@@ -20,4 +22,3 @@
                       6. firebase
                       7. react-hot-toast
                       8. react-toastify
-                                 
