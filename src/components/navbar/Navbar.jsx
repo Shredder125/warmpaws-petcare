@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
-import { FaPaw } from "react-icons/fa";
+import { FaPaw, FaUserCircle } from "react-icons/fa";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { app } from "../../firebase/config";
@@ -86,21 +86,38 @@ const Navbar = () => {
 
         <div className="flex items-center gap-4">
           {user ? (
-            <button
-              onClick={handleLogout}
-              className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group"
-            >
-              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-600 group-hover:w-full group-hover:h-full"></span>
-              <span className="relative">Logout</span>
-            </button>
+            <div className="flex items-center gap-3">
+              <div className="hidden md:flex items-center gap-1 cursor-pointer">
+                <FaUserCircle
+                  size={28}
+                  className="text-gray-800 dark:text-yellow-300"
+                />
+                <span className=" text-gray-800 dark:text-yellow-300 md:text-lg md:ml-1 md:font-bold ">
+                  {user.displayName || "User"}
+                </span>
+              </div>
+              <button
+                onClick={handleLogout}
+                className="ml-6 relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-red-500 hover:bg-red-600 transition-transform transform hover:scale-105"
+              >
+                <span className="relative">Logout</span>
+              </button>
+            </div>
           ) : (
-            <Link
-              to="/login"
-              className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group"
-            >
-              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-600 group-hover:w-full group-hover:h-full"></span>
-              <span className="relative">Login</span>
-            </Link>
+            <div className="flex gap-2">
+              <Link
+                to="/login"
+                className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-blue-500 hover:bg-blue-600 transition-transform transform hover:scale-105"
+              >
+                <span className="relative">Login</span>
+              </Link>
+              <Link
+                to="/register"
+                className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-green-500 hover:bg-green-600 transition-transform transform hover:scale-105"
+              >
+                <span className="relative">Register</span>
+              </Link>
+            </div>
           )}
 
           <div className="md:hidden">
@@ -161,9 +178,14 @@ const Navbar = () => {
                   Logout
                 </button>
               ) : (
-                <Link to="/login" className={getLinkClasses("/login")}>
-                  Login
-                </Link>
+                <div className="flex flex-col gap-1">
+                  <Link to="/login" className={getLinkClasses("/login")}>
+                    Login
+                  </Link>
+                  <Link to="/register" className={getLinkClasses("/register")}>
+                    Register
+                  </Link>
+                </div>
               )}
             </li>
           </ul>

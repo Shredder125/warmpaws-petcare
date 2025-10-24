@@ -22,3 +22,4 @@
                       6. firebase
                       7. react-hot-toast
                       8. react-toastify
+                      9. react-hero-slider
