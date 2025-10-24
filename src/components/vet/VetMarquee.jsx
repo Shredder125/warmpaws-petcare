@@ -59,7 +59,7 @@ const VetMarquee = () => {
 
                 <div className="mt-4 flex justify-between items-center">
                   <span className="px-3 py-1 rounded-full bg-linear-to-r from-blue-400 to-indigo-500 text-white font-semibold text-sm">
-                    ${vet.consultationFees}
+                    $ {vet.consultationFees}
                   </span>
 
                   <div className="flex items-center gap-1">

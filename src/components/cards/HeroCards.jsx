@@ -46,7 +46,7 @@ const HeroCard = ({ service }) => {
           alt={service.serviceName}
           className="w-full h-full object-cover"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/25 via-transparent to-transparent"></div>
+        <div className="absolute inset-0 bg-linear-to-t from-black/25 via-transparent to-transparent"></div>
       </div>
       <div className="p-5 flex flex-col flex-1">
         <h3 className="text-lg sm:text-xl font-bold text-gray-800">{service.serviceName}</h3>
@@ -62,8 +62,8 @@ const HeroCard = ({ service }) => {
           )}
         </p>
         <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mt-4 gap-2 sm:gap-0">
-          <span className="px-3 py-1 rounded-full bg-gradient-to-r from-blue-400 to-indigo-500 text-white font-semibold shadow-md text-sm sm:text-base">
-            ${service.price} / session
+          <span className="px-3 py-1 rounded-full bg-linear-to-r from-blue-400 to-indigo-500 text-white font-semibold shadow-md text-sm sm:text-base">
+            $ {service.price} / session
           </span>
           <div className="flex items-center gap-1">
             <StarRating rating={service.rating} />
@@ -76,7 +76,7 @@ const HeroCard = ({ service }) => {
         <div className="flex gap-3 mt-5">
           <button
             onClick={handleViewDetails}
-            className="flex-1 py-3 rounded-xl bg-gradient-to-r from-blue-500 to-indigo-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform"
+            className="flex-1 py-3 rounded-xl bg-linear-to-r from-blue-500 to-indigo-500 text-white font-semibold shadow-lg hover:scale-105 transition-transform"
           >
             View Details
           </button>
