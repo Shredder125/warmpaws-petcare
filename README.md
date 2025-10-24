@@ -23,5 +23,5 @@
                       7. daisyui
                       8. animate.css
                       9. firebase 
-
+                      10. Swiper   
 
