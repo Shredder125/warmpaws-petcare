@@ -14,12 +14,14 @@
           e. Service Listings (Display available veterinary services &Conditional access based on authentication.)
           f. Modern UI & Animations: Clean and playful design and Animated hover effects and transitions using TailwindCSS and Animate.css.
           
-5. NPM Packages Used: 1.react-router-dom
-                      2. daisyui
-                      3. tailwindcss
-                      4. react-icons
-                      5. animate.css
-                      6. firebase
-                      7. react-hot-toast
-                      8. react-toastify
-                      9. react-hero-slider
+5. NPM Packages Used: 1. react-router-dom
+                      2. react-icons   
+                      3. react-toastify
+                      4. react-hero-slider
+                      5. react-hot-toast 
+                      6. tailwindcss
+                      7. daisyui
+                      8. animate.css
+                      9. firebase 
+
+

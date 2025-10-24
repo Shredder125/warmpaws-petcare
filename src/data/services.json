@@ -18,7 +18,7 @@
     "providerEmail": "contact@warmtails.com",
     "price": 30,
     "rating": 4.8,
-    "slotsAvailable": 3,
+    "slotsAvailable": 12,
     "description": "A grooming session combined with cozy thermal wrapping to protect your pet’s coat from dry winter air. Our thermal blankets are specially designed to maintain optimal warmth while your pet enjoys gentle brushing, nail trimming, and a calming spa experience. Perfect for pets sensitive to cold or those with delicate fur that requires extra care.",
     "image": "https://i.ibb.co/wZfQFXQ1/Baby-Fleece-Handtuch-Cream.jpg",
     "category": "Grooming"
@@ -30,7 +30,7 @@
     "providerEmail": "hello@cozypaws.com",
     "price": 15,
     "rating": 4.7,
-    "slotsAvailable": 5,
+    "slotsAvailable": 64,
     "description": "Protective paw balm and hydration therapy to prevent cracking and dryness during chilly walks. This treatment uses natural, pet-safe ingredients to soothe, moisturize, and shield paws from ice, salt, and rough surfaces. Ideal for active pets who enjoy outdoor play during winter months, leaving their paws soft and healthy.",
     "image": "https://i.ibb.co/0RJdVhyg/B-lsamo-para-patas-en-barra-40g-crema-para-pies-de-mascotas-suministros-protectores-para-patas-de.jpg",
     "category": "Skincare"
@@ -42,7 +42,7 @@
     "providerEmail": "support@petwell.com",
     "price": 40,
     "rating": 5.0,
-    "slotsAvailable": 6,
+    "slotsAvailable": 17,
     "description": "Comprehensive winter wellness examination, including temperature, skin, and immunity checks. Our veterinary experts thoroughly assess your pet’s health to ensure they are not affected by seasonal illnesses. Preventive care recommendations, vaccinations, and personalized guidance are provided to maintain your pet’s vitality and comfort throughout the cold season.",
     "image": "https://i.ibb.co/pjLs6xh3/98ad6d56-fd67-4125-bd1d-b78a5ddc9df3.jpg",
     "category": "Health"
@@ -54,7 +54,7 @@
     "providerEmail": "care@snugglenest.com",
     "price": 20,
     "rating": 4.6,
-    "slotsAvailable": 2,
+    "slotsAvailable": 22,
     "description": "We help you set up the perfect warm bedding arrangement using hypoallergenic fabrics and heating pads. Each bedding setup is customized to your pet’s size and sleeping habits, ensuring maximum comfort. Soft plush materials, secure placement, and warmth-retention techniques guarantee a cozy environment for restful sleep during cold nights.",
     "image": "https://i.ibb.co/JF78krYR/Temu-Extra-Small-Dog-Bed-Thickened-Plush-Pet-Bed-With-Non-slip-Bottom-Soft-Washable-Polyester-Dog-Be.jpg",
     "category": "Home Care"
@@ -66,7 +66,7 @@
     "providerEmail": "info@vetdiet.com",
     "price": 35,
     "rating": 4.8,
-    "slotsAvailable": 5,
+    "slotsAvailable": 52,
     "description": "Personalized nutrition advice to maintain your pet’s energy and immunity during cold weather. Our experts analyze your pet’s dietary needs, activity level, and seasonal adjustments to recommend optimal meal plans, supplements, and feeding routines. This consultation ensures pets stay healthy, energetic, and immune-strong throughout the winter months.",
     "image": "https://i.ibb.co/m5m3gJRt/Pet-nutrition.jpg",
     "category": "Consultation"
@@ -90,7 +90,7 @@
     "providerEmail": "contact@fluffbuff.com",
     "price": 28,
     "rating": 4.9,
-    "slotsAvailable": 3,
+    "slotsAvailable": 14,
     "description": "Gentle warm bath, coat drying, and spa treatment to keep your pet relaxed and clean during winter. Includes hypoallergenic shampoos, conditioning treatments, and soothing massage to maintain coat health. Perfect for pets sensitive to cold water or those needing extra comfort and relaxation in winter months.",
     "image": "https://i.ibb.co/1fRZSSQq/Paawsh-Where-Every-Pet-Feels-Special.jpg",
     "category": "Grooming"
@@ -102,7 +102,7 @@
     "providerEmail": "info@pawsafe.com",
     "price": 14,
     "rating": 4.7,
-    "slotsAvailable": 7,
+    "slotsAvailable": 13,
     "description": "Protective paw treatment to prevent frostbite and dryness. Includes paw wax application and a warm paw massage to ensure comfort during icy walks.",
     "image": "https://i.ibb.co/whBrZGhk/How-to-Make-Paw-Safe-Ice-Melt-Pro-Pet-Hero.jpg",
     "category": "Skincare"
@@ -115,7 +115,7 @@
     "providerEmail": "info@furrywarmth.com",
     "price": 27,
     "rating": 4.8,
-    "slotsAvailable": 5,
+    "slotsAvailable": 50,
     "description": "Comfortable thermal hoodies designed to protect your dog from winter chill. Soft fabrics, easy to wear, and suitable for small to medium breeds. Available in multiple colors and patterns to keep your pet both warm and stylish.",
     "image": "https://i.ibb.co/b5CHdmMZ/Chocolate-Sherpa-Fleece-Dog-Sweatshirt-Warm-Teddy-Dog-Sweater-Cozy-Dog-Hoodie-Handmade-Dog-Clothes-P.jpg",
     "category": "Clothing"
@@ -127,7 +127,7 @@
     "providerEmail": "contact@pawrelief.com",
     "price": 18,
     "rating": 4.7,
-    "slotsAvailable": 6,
+    "slotsAvailable": 21,
     "description": "Specialized paw massage to improve circulation and reduce stiffness caused by cold weather. Includes a gentle moisturizing balm and soothing techniques to keep your pet’s paws healthy and pain-free.",
     "image": "https://i.ibb.co/21L5hdBT/Why-Do-Dogs-Like-Massages.jpg",
     "category": "Skincare"
@@ -139,7 +139,7 @@
     "providerEmail": "support@safepaws.com",
     "price": 20,
     "rating": 4.6,
-    "slotsAvailable": 4,
+    "slotsAvailable": 12,
     "description": "Installation of reflective and insulated collars for safe evening walks in winter. Collars are adjustable, durable, and designed to keep your pet visible and comfortable in cold conditions.",
     "image": "https://i.ibb.co/PGgF3xWY/Unleash-your-potential-Non-stop-dogwear.jpg",
     "category": "Accessories"
@@ -151,7 +151,7 @@
     "providerEmail": "hello@furglow.com",
     "price": 32,
     "rating": 4.9,
-    "slotsAvailable": 3,
+    "slotsAvailable": 32,
     "description": "Deep hydration treatment to maintain your pet’s coat shine and softness during dry winter months. Includes a gentle warm rinse, coat conditioning, and protective sprays.",
     "image": "https://i.ibb.co/cdfkRcG/How-cold-is-too-cold.jpg",
     "category": "Grooming"
@@ -163,7 +163,7 @@
     "providerEmail": "contact@adventurepaws.com",
     "price": 45,
     "rating": 4.8,
-    "slotsAvailable": 5,
+    "slotsAvailable": 53,
     "description": "Guided winter hiking and snow adventure sessions with full pet safety gear. Includes insulated vests, booties, and on-site hydration for your active furry companion.",
     "image": "https://i.ibb.co/KSZTPyr/Outdoor-Winter-Activities-for-Dogs.jpg",
     "category": "Outdoor Activity"
@@ -199,7 +199,7 @@
     "providerEmail": "hello@pawfun.com",
     "price": 35,
     "rating": 4.8,
-    "slotsAvailable": 3,
+    "slotsAvailable": 31,
     "description": "Set up a heated indoor play area for pets, with safe toys, obstacles, and winter-themed activities. Keeps pets active and entertained during cold weather.",
     "image": "https://i.ibb.co/27QbdpyJ/12-Fun-Pet-Toys-That-Will-Keep-Your-Pets-Entertained-for-Hours.jpg",
     "category": "Home Care"
@@ -211,7 +211,7 @@
     "providerEmail": "service@tailorpaws.com",
     "price": 18,
     "rating": 4.5,
-    "slotsAvailable": 6,
+    "slotsAvailable": 12,
     "description": "Professional repair and resizing of your pet’s winter coats. Ensures perfect fit, comfort, and warmth throughout the cold season. Suitable for worn-out or slightly tight garments.",
     "image": "https://i.ibb.co/Y7YcBLty/Making-a-Dog-Sweater-From-Your-Sweater.jpg",
     "category": "Clothing"
@@ -224,7 +224,7 @@
     "providerEmail": "service@pawpal.com",
     "price": 50,
     "rating": 4.9,
-    "slotsAvailable": 2,
+    "slotsAvailable": 28,
     "description": "Installation of temperature-controlled kennels to ensure your pet’s comfort throughout the winter. Our engineers design and set up fully insulated kennels with adjustable heating, safety sensors, and durable materials. Ideal for outdoor pets or those needing extra warmth, providing a safe and cozy environment in harsh cold conditions.",
     "image": "https://i.ibb.co/SgdBgYg/Amazon-com.jpg",
     "category": "Home Care"
@@ -236,7 +236,7 @@
     "providerEmail": "craft@knitpaws.com",
     "price": 22,
     "rating": 4.7,
-    "slotsAvailable": 4,
+    "slotsAvailable": 47,
     "description": "Handcrafted sweaters tailored to your pet’s size and personality using soft, pet-safe wool. Each sweater is designed to provide warmth, flexibility, and style, keeping pets cozy during walks or indoor activities. Custom colors, patterns, and personalized embroidery are available for a unique winter wardrobe.",
     "image": "https://i.ibb.co/DDVVNjhK/download-3.jpg",
     "category": "Clothing"
