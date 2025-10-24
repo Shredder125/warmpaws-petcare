@@ -84,11 +84,11 @@ export default function Profile() {
     );
 
   return (
-    <div className="relative py-12 min-h-screen bg-gradient-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-blue-950 dark:to-slate-900">
+    <div className="relative py-12 min-h-screen bg-linear-to-br from-blue-50 via-white to-blue-50 dark:from-slate-900 dark:via-blue-950 dark:to-slate-900">
       <Toaster position="top-right" reverseOrder={false} />
       <div className="relative container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold flex items-center justify-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-blue-400 dark:from-blue-300 dark:to-blue-500">
+          <h1 className="text-3xl flex flex-col text-center md:text-5xl md:flex-row font-bold items-center justify-center gap-2 text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-400 dark:from-blue-300 dark:to-blue-500">
             Your <FaPaw className="text-red-400 inline-block" size={36} />{" "}
             WarmPaws Profile
           </h1>
