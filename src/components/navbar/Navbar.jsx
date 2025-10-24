@@ -1,16 +1,17 @@
 import React, { useState, useContext, useEffect } from "react";
 import { Link, useNavigate, useLocation } from "react-router-dom";
 import { FaPaw } from "react-icons/fa";
-import { FiSun, FiMoon } from "react-icons/fi";
 import { ThemeContext } from "../../contexts/ThemeContext";
 import { getAuth, onAuthStateChanged, signOut } from "firebase/auth";
 import { app } from "../../firebase/config";
 import "animate.css";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoIosArrowBack } from "react-icons/io";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [user, setUser] = useState(null);
-  const { theme, toggleTheme } = useContext(ThemeContext);
+  const { theme } = useContext(ThemeContext);
   const navigate = useNavigate();
   const location = useLocation();
   const auth = getAuth(app);
@@ -84,28 +85,24 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center gap-4">
-          <button
-            onClick={toggleTheme}
-            className="p-2 rounded-full bg-white dark:bg-gray-700 text-gray-800 dark:text-yellow-300 hover:scale-110 transition-transform shadow-sm"
-          >
-            {theme === "light" ? <FiMoon size={20} /> : <FiSun size={20} />}
-          </button>
-
           {user ? (
             <button
               onClick={handleLogout}
-              className="btn btn-sm btn-primary bg-red-500 hover:bg-red-600 text-white"
+              className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group"
             >
-              Logout
+              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-red-600 group-hover:w-full group-hover:h-full"></span>
+              <span className="relative">Logout</span>
             </button>
           ) : (
             <Link
               to="/login"
-              className="btn btn-sm btn-primary bg-blue-500 hover:bg-blue-600 text-white"
+              className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group"
             >
-              Login
+              <span className="absolute w-0 h-0 transition-all duration-500 ease-out bg-blue-600 group-hover:w-full group-hover:h-full"></span>
+              <span className="relative">Login</span>
             </Link>
           )}
+
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -115,11 +112,12 @@ const Navbar = () => {
                   : "text-yellow-300 hover:bg-gray-700"
               }`}
             >
-              {isMenuOpen ? "✖" : "☰"}
+              {isMenuOpen ? <IoIosArrowBack /> : <GiHamburgerMenu />}
             </button>
           </div>
         </div>
       </div>
+
       {isMenuOpen && (
         <div
           className={`md:hidden transition-colors duration-500 ${
