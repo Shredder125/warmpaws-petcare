@@ -4,7 +4,7 @@
 
 2. Purpose: WarmPaws is a pet-care platform designed to help pet owners find veterinary services, manage profiles, and explore various pet-related services. The application offers a seamless and modern user experience, ensuring users can access essential pet care features efficiently.
 
-3. Live URL: 
+3. Live URL: https://warmpaws-petcare-company.netlify.app/
 
 4. Key Features: 
           a. User Authentication (Firebase email/password login and logout, Google Sign-In integration, Dynamic rendering based on authentication state.)
