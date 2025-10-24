@@ -35,7 +35,7 @@ const VetMarquee = () => {
           {duplicatedVets.map((vet, index) => (
             <div
               key={index}
-              className="min-w-[15rem] h-[18rem] bg-linear-to-br from-blue-50 via-white to-blue-100 rounded-3xl overflow-hidden shrink-0 flex flex-col"
+              className="min-w-[15rem] h-[22rem] bg-linear-to-br from-blue-50 via-white to-blue-100 rounded-3xl overflow-hidden shrink-0 flex flex-col"
             >
               <div className="relative h-32">
                 <img
@@ -51,7 +51,7 @@ const VetMarquee = () => {
                   <h3 className="text-lg font-bold text-gray-800">
                     {vet.name}
                   </h3>
-                  <p className="text-gray-600 text-sm mb-1">{vet.career}</p>
+                  <p className="text-gray-600 text-sm my-3">{vet.career}</p>
                   <p className="text-gray-700 text-sm font-medium">
                     <span className="text-xl font-bold text-amber-600">{vet.experience}</span> of Experience.
                   </p>
