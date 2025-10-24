@@ -53,7 +53,7 @@ const VetMarquee = () => {
                   </h3>
                   <p className="text-gray-600 text-sm mb-1">{vet.career}</p>
                   <p className="text-gray-700 text-sm font-medium">
-                    {vet.experience} Experience
+                    <span className="text-xl font-bold text-amber-600">{vet.experience}</span> of Experience.
                   </p>
                 </div>
 
