@@ -1,5 +1,5 @@
 import React from "react";
-import winterTips from "../../data/Petcaretips.json";
+import winterTips from "../../data//PetcareTips.json";
 import "animate.css";
 
 const WinterCareTips = () => {
