@@ -63,7 +63,6 @@ const Navbar = () => {
           />
           WarmPaws
         </Link>
-
         <div className="hidden md:flex items-center gap-6 font-medium">
           <Link to="/" className={getLinkClasses("/")}>
             Home
@@ -83,7 +82,6 @@ const Navbar = () => {
             My Profile
           </Link>
         </div>
-
         <div className="flex items-center gap-4">
           {user ? (
             <div className="flex items-center gap-3">
@@ -92,7 +90,7 @@ const Navbar = () => {
                   size={28}
                   className="text-gray-800 dark:text-yellow-300"
                 />
-                <span className=" text-gray-800 dark:text-yellow-300 md:text-lg md:ml-1 md:font-bold ">
+                <span className="text-gray-800 dark:text-yellow-300 md:text-lg md:ml-1 md:font-bold ">
                   {user.displayName || "User"}
                 </span>
               </div>
@@ -104,7 +102,7 @@ const Navbar = () => {
               </button>
             </div>
           ) : (
-            <div className="flex gap-2">
+            <div className="flex items-center gap-2">
               <Link
                 to="/login"
                 className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-blue-500 hover:bg-blue-600 transition-transform transform hover:scale-105"
@@ -113,13 +111,12 @@ const Navbar = () => {
               </Link>
               <Link
                 to="/register"
-                className="relative inline-flex items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-green-500 hover:bg-green-600 transition-transform transform hover:scale-105"
+                className="hidden sm:inline-flex relative items-center justify-center px-5 py-2 overflow-hidden font-medium text-white rounded-lg shadow-lg group bg-green-500 hover:bg-green-600 transition-transform transform hover:scale-105"
               >
                 <span className="relative">Register</span>
               </Link>
             </div>
           )}
-
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -134,7 +131,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-
       {isMenuOpen && (
         <div
           className={`md:hidden transition-colors duration-500 ${
@@ -182,7 +178,7 @@ const Navbar = () => {
                   <Link to="/login" className={getLinkClasses("/login")}>
                     Login
                   </Link>
-                  <Link to="/register" className={getLinkClasses("/register")}>
+                  <Link to="/register" className="sm:hidden">
                     Register
                   </Link>
                 </div>
