@@ -8,7 +8,7 @@ const VetMarquee = () => {
   const duplicatedVets = [...vets, ...vets];
 
   return (
-    <div className="bg-lenear-to-b from-blue-50 to-blue-100 py-6 overflow-hidden animate__animated animate__zoomIn">
+    <div className="bg-linear-to-b from-blue-50 to-blue-100 py-6 overflow-hidden animate__animated animate__zoomIn">
       <h2 className="text-5xl font-bold text-center mb-6 ">
         Meet Our Expert Vets
       </h2>
@@ -35,9 +35,9 @@ const VetMarquee = () => {
           {duplicatedVets.map((vet, index) => (
             <div
               key={index}
-              className="min-w-[18rem] h-[24] bg-linear-to-br from-blue-50 via-white to-blue-100 rounded-3xl overflow-hidden shrink-0 flex flex-col"
+              className="min-w-[15rem] h-[18rem] bg-linear-to-br from-blue-50 via-white to-blue-100 rounded-3xl overflow-hidden shrink-0 flex flex-col"
             >
-              <div className="relative h-48">
+              <div className="relative h-32">
                 <img
                   src={vet.image}
                   alt={vet.name}
@@ -46,9 +46,9 @@ const VetMarquee = () => {
                 <div className="absolute inset-0 bg-linear-to-t from-black/25 via-transparent to-transparent"></div>
               </div>
 
-              <div className="p-4 flex flex-col flex-1 justify-between">
+              <div className="p-3 flex flex-col flex-1 justify-between">
                 <div>
-                  <h3 className="text-xl font-bold text-gray-800">
+                  <h3 className="text-lg font-bold text-gray-800">
                     {vet.name}
                   </h3>
                   <p className="text-gray-600 text-sm mb-1">{vet.career}</p>
@@ -57,14 +57,14 @@ const VetMarquee = () => {
                   </p>
                 </div>
 
-                <div className="mt-4 flex justify-between items-center">
-                  <span className="px-3 py-1 rounded-full bg-linear-to-r from-blue-400 to-indigo-500 text-white font-semibold text-sm">
+                <div className="mt-3 flex justify-between items-center">
+                  <span className="px-2 py-1 rounded-full bg-linear-to-r from-blue-400 to-indigo-500 text-white font-semibold text-sm">
                     $ {vet.consultationFees}
                   </span>
 
                   <div className="flex items-center gap-1">
                     <svg
-                      className="w-5 h-5 text-yellow-400"
+                      className="w-4 h-4 text-yellow-400"
                       fill="currentColor"
                       viewBox="0 0 20 20"
                     >
