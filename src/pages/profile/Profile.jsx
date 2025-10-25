@@ -25,17 +25,12 @@ export default function Profile() {
         setUser({
           name: currentUser.displayName || "WarmPaws User",
           email: currentUser.email,
-          image:
-            currentUser.photoURL ||
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+          image: currentUser.photoURL || null,
           joinDate: "January 2024",
           petCount: 3,
         });
         setName(currentUser.displayName || "");
-        setImageUrl(
-          currentUser.photoURL ||
-            "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop"
-        );
+        setImageUrl(currentUser.photoURL || "");
       } else {
         setUser(null);
       }
@@ -50,12 +45,12 @@ export default function Profile() {
     try {
       await updateProfile(auth.currentUser, {
         displayName: name,
-        photoURL: imageUrl,
+        photoURL: imageUrl || null,
       });
       setUser((prev) => ({
         ...prev,
         name: name || "WarmPaws User",
-        image: imageUrl || prev.image,
+        image: imageUrl || null,
       }));
       setEditing(false);
       toast.success("Profile updated successfully! 🎉");
@@ -88,7 +83,7 @@ export default function Profile() {
       <Toaster position="top-right" reverseOrder={false} />
       <div className="relative container mx-auto px-4">
         <div className="text-center mb-12">
-          <h1 className="text-3xl flex flex-col text-center md:text-5xl md:flex-row font-bold items-center justify-center gap-2 text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-400 dark:from-blue-300 dark:to-blue-500">
+          <h1 className="text-3xl flex flex-col md:text-5xl md:flex-row font-bold items-center justify-center gap-2 text-transparent bg-clip-text bg-linear-to-r from-blue-600 to-blue-400 dark:from-blue-300 dark:to-blue-500">
             Your <FaPaw className="text-red-400 inline-block" size={36} />{" "}
             WarmPaws Profile
           </h1>
@@ -100,15 +95,17 @@ export default function Profile() {
         <div className="max-w-2xl mx-auto bg-white/80 dark:bg-slate-800/80 border border-blue-100 dark:border-blue-900 shadow-2xl rounded-xl p-8 md:p-12">
           <div className="flex justify-center mb-8">
             <div
-              className="relative group"
+              className="relative w-40 h-40 md:w-48 md:h-48 rounded-full border-4 border-white dark:border-slate-700 shadow-lg bg-gray-100 dark:bg-slate-700 flex items-center justify-center overflow-hidden"
               onMouseEnter={() => setIsHovering(true)}
               onMouseLeave={() => setIsHovering(false)}
             >
-              <img
-                src={user.image}
-                alt={user.name}
-                className="relative w-40 h-40 md:w-48 md:h-48 rounded-full object-cover border-4 border-white dark:border-slate-700 shadow-lg"
-              />
+              {user.image && (
+                <img
+                  src={user.image}
+                  alt={user.name}
+                  className="w-full h-full object-cover"
+                />
+              )}
               {isHovering && !editing && (
                 <div className="absolute inset-0 rounded-full bg-blue-500/20 dark:bg-blue-400/20 flex items-center justify-center backdrop-blur-sm">
                   <Edit2 className="text-white" size={32} />
@@ -151,6 +148,7 @@ export default function Profile() {
               </p>
             </div>
           </div>
+
           <div className="flex flex-col sm:flex-row gap-4">
             {!editing && (
               <button
@@ -158,8 +156,7 @@ export default function Profile() {
                 onClick={() => setEditing(true)}
                 className="flex-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-700 hover:to-blue-600 text-white font-semibold py-6 rounded-lg shadow-lg flex items-center justify-center"
               >
-                <Edit2 className="mr-2" size={20} />
-                Update Profile
+                <Edit2 className="mr-2" size={20} /> Update Profile
               </button>
             )}
             <button
@@ -167,10 +164,10 @@ export default function Profile() {
               onClick={handleLogout}
               className="flex-1 border-2 border-blue-300 dark:border-blue-700 text-blue-600 dark:text-blue-400 hover:bg-blue-50 dark:hover:bg-blue-900/30 font-semibold py-6 rounded-lg flex items-center justify-center"
             >
-              <LogOut className="mr-2" size={20} />
-              Logout
+              <LogOut className="mr-2" size={20} /> Logout
             </button>
           </div>
+
           {editing && (
             <form
               onSubmit={handleUpdateProfile}
@@ -188,7 +185,7 @@ export default function Profile() {
                 value={imageUrl}
                 onChange={(e) => setImageUrl(e.target.value)}
                 className="text-center text-sm text-gray-600 dark:text-gray-300 w-full bg-transparent border-b border-gray-300 dark:border-gray-600 focus:outline-none py-1"
-                placeholder="Enter new profile image URL"
+                placeholder="Enter new profile image URL (optional)"
               />
               <div className="flex gap-4 justify-center">
                 <button

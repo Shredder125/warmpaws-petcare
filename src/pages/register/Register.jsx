@@ -46,9 +46,7 @@ const Register = () => {
       const userCredential = await registerUser(email, password);
       await updateProfile(userCredential.user, {
         displayName: name,
-        photoURL:
-          imageUrl ||
-          "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
+        photoURL: imageUrl || null, 
       });
       toast.success("Registration successful! Redirecting...");
       setTimeout(() => navigate(from), 1000);
@@ -94,6 +92,7 @@ const Register = () => {
         className="absolute bottom-20 right-1/4 text-blue-300 opacity-20 animate-pulse delay-700"
         size={50}
       />
+
       <div className="max-w-md w-full bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-10 relative z-10 backdrop-blur-sm space-y-6">
         <h1 className="text-5xl md:text-4xl font-bold text-center text-blue-600 dark:text-blue-400 mb-6">
           Create Your WarmPaws Account
@@ -129,6 +128,7 @@ const Register = () => {
               disabled={loading}
             />
           </div>
+
           <div className="relative">
             <label className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-1">
               Password
@@ -170,7 +170,7 @@ const Register = () => {
               type="url"
               value={imageUrl}
               onChange={(e) => setImageUrl(e.target.value)}
-              placeholder="Enter image URL"
+              placeholder="Enter image URL (optional)"
               className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 dark:bg-gray-700 dark:text-white"
               disabled={loading}
             />
